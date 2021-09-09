@@ -1,0 +1,29 @@
+{
+  "name": "plusgrid",
+  "version": "1.0.0",
+  "description": "A simple CSS Grid library ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spartanx10000/PlusGrid.git"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "responsive-grid",
+    "flexbox"
+  ],
+  "author": "Carlos Daniel Angulo Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spartanx10000/PlusGrid/issues"
+  },
+  "homepage": "https://github.com/Spartanx10000/PlusGrid#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-cssmin": "^4.0.0"
+  }
+}
