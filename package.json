@@ -2,9 +2,10 @@
   "name": "plusgrid",
   "version": "1.0.0",
   "description": "A simple CSS Grid library ",
-  "main": "index.js",
+  "main": "./dist/plusgrid.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt cssmin"
   },
   "repository": {
     "type": "git",
