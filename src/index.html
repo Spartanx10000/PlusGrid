@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlusGrid</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="css/plusgrid.css" rel="stylesheet" />
 
     <style>
@@ -13,89 +16,228 @@
             color: #434446;
         }
 
+        .header {
+            padding-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .header > span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+        }
+
+        .header > p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .info {
+            padding-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info > h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .info > p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
         .box{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 50px;
             background: #e6e6e6;
-            border: 1px solid #434446;
+            border: 1px solid #c6c6c7;
+            font-family: 'Open Sans', sans-serif;
             color: black;
             font-size: 10px;
         }
+
+        pre {
+            border: 1px solid #292929;
+            background: #e6e6e6;
+            white-space: pre;
+            word-wrap: break-word;
+            overflow: auto;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
     </style>
 
 </head>
 <body>
-    
-    <div class="g-container" style="background-color: aqua;">
-        <div class="g-row">
-            <div class="g-col-2"><div class="box"> 1 </div></div>
-            <div class="g-col-2"><div class="box"> 2 </div></div>
-            <div class="g-col-2"><div class="box"> 3 </div></div>
-            <div class="g-col-2"><div class="box"> 4 </div></div>
-            <div class="g-col-2"><div class="box"> 5 </div></div>
-            <div class="g-col-2"><div class="box"> 6 </div></div>
-        </div>
+    <div class="g-container">
+        <section class="header">
+            <span>PlusGrid</span>
+            <p>A simple Flexbox Grid library</p>
+        </section>
+        <section class="info">
+            <h2>g-container</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="g-container" style="background-color: white;">
+                <div class="g-row">
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                </div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class="g-container"&gt;
+                    &lt;div class="g-row"&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                        &lt;div class="g-col-1"&gt;col-1&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+        <section class="info">
+            <h2>g-container-fluid</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="g-container-fluid" style="background-color: white">
+                <div class="g-row">
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                </div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class="g-container-fluid"&gt;
+                    &lt;div class="g-row"&gt;
+                        .....
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+        <section class="info">
+            <h2>g-col-offset</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="g-container" style="background-color: white">      
+                <!-- Offset -->
+                <div class="g-row">
+                    <div class="g-col-offset-11 g-col-1"><div class="box">g-col-offset-11 g-col-1</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-10 g-col-2"><div class="box">g-col-offset-10 g-col-2</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-9 g-col-3"><div class="box">g-col-offset-9 g-col-3</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-8 g-col-4"><div class="box">g-col-offset-8 g-col-4</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-7 g-col-5"><div class="box">g-col-offset-7 g-col-5</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-6 g-col-6"><div class="box">g-col-offset-6 g-col-6</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-5 g-col-7"><div class="box">g-col-offset-5 g-col-7</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-4 g-col-8"><div class="box">g-col-offset-4 g-col-8</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-3 g-col-9"><div class="box">g-col-offset-3 g-col-9</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-2 g-col-10"><div class="box">g-col-offset-2 g-col-10</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-offset-1 g-col-11"><div class="box">g-col-offset-1 g-col-11</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-2"><div class="box">g-col-2</div></div>
+                    <div class="g-col-offset-3 g-col-2"><div class="box">g-col-offset-3 g-col-2</div></div>
+                    <div class="g-col-offset-3 g-col-2"><div class="box">g-col-offset-3 g-col-2</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <h2>g-col-pull</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="g-container" style="background-color: white">   
+                <!-- Pull -->
+                <div class="g-row">
+                    <div class="g-col-1 g-col-pull-11"><div class="box">g-col-1 g-col-pull-11</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-2 g-col-pull-10"><div class="box">g-col-2 g-col-pull-10</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-3 g-col-pull-9"><div class="box">g-col-3 g-col-pull-9</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-4 g-col-pull-8"><div class="box">g-col-4 g-col-pull-8</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-5 g-col-pull-7"><div class="box">g-col-5 g-col-pull-7</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-6 g-col-pull-6"><div class="box">g-col-6 g-col-pull-6</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-7 g-col-pull-5"><div class="box">g-col-7 g-col-pull-5</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-8 g-col-pull-4"><div class="box">g-col-8 g-col-pull-4</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-9 g-col-pull-3"><div class="box">g-col-9 g-col-pull-3</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-10 g-col-pull-2"><div class="box">g-col-10 g-col-pull-2</div></div>
+                </div>
+                <div class="g-row">
+                    <div class="g-col-11 g-col-pull-1"><div class="box">g-col-11 g-col-pull-1</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="g-container" style="background-color: white;">   
+                <!-- Offset and Pull -->
+                <div class="g-row">
+                    <div class="g-col-offset-5 g-col-2 g-col-pull-5"><div class="box">g-col-offset-5 g-col-2 g-col-pull-5</div></div>
+                </div>
+            </div>
+        </section>
     </div>
-
-    </br>
-
-    <div class="g-container-fluid" style="background-color: aqua;">
-        <div class="g-row">
-            <div class="g-col-2"><div class="box"> 1 </div></div>
-            <div class="g-col-2"><div class="box"> 2 </div></div>
-            <div class="g-col-2"><div class="box"> 3 </div></div>
-            <div class="g-col-2"><div class="box"> 4 </div></div>
-            <div class="g-col-2"><div class="box"> 5 </div></div>
-            <div class="g-col-2"><div class="box"> 6 </div></div>
-        </div>
-    </div>
-
-    </br>
-
-    <div class="g-container" style="background-color: aqua;">
-        <div class="g-row">
-            <div class="g-col-offset-11 g-col-1"><div class="box">g-col-offset-11 g-col-1</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-10 g-col-2"><div class="box">g-col-offset-10 g-col-2</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-9 g-col-3"><div class="box">g-col-offset-9 g-col-3</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-8 g-col-4"><div class="box">g-col-offset-8 g-col-4</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-7 g-col-5"><div class="box">g-col-offset-7 g-col-5</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-6 g-col-6"><div class="box">g-col-offset-6 g-col-6</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-5 g-col-7"><div class="box">g-col-offset-5 g-col-7</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-4 g-col-8"><div class="box">g-col-offset-4 g-col-8</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-3 g-col-9"><div class="box">g-col-offset-3 g-col-9</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-2 g-col-10"><div class="box">g-col-offset-2 g-col-10</div></div>
-        </div>
-        <div class="g-row">
-            <div class="g-col-offset-1 g-col-11"><div class="box">g-col-offset-1 g-col-11</div></div>
-        </div>
-
-        <div class="g-row">
-            <div class="g-col-2"><div class="box">g-col-2</div></div>
-            <div class="g-col-offset-3 g-col-2"><div class="box">g-col-offset-3 g-col-2</div></div>
-            <div class="g-col-offset-3 g-col-2"><div class="box">g-col-offset-3 g-col-2</div></div>
-        </div>
-
-    </div>
-
 </body>
 </html>

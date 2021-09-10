@@ -1,7 +1,7 @@
 {
   "name": "plusgrid",
   "version": "1.0.0",
-  "description": "A simple CSS Grid library ",
+  "description": "A simple Flexbox Grid library",
   "main": "./dist/plusgrid.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
