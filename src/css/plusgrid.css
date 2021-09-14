@@ -4,15 +4,20 @@
  * Licensed under MIT
  */
 
+ :root {
+    /* Default: 10px */
+    --g-gutter-x: 0.625rem;
+    --g-gutter-y: 0.625rem;
+ }
+
  .g-container, .g-container-fluid {
     margin-right: auto;
     margin-left: auto;
  }
 
 .g-container {
-    /*width: 100%;*/
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    padding-right: var(--g-gutter-x);
+    padding-left: var(--g-gutter-x);
 }
 
 @media (min-width: 576px) {
@@ -48,6 +53,24 @@
 .g-row {
     display: flex;
     flex-wrap: wrap;
+    margin-top: var(--g-gutter-y);
+}
+
+.g-row > * {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--g-gutter-x) * .50);
+    padding-left: calc(var(--g-gutter-x) * .50);
+}
+
+.g-no-gutter, .g-no-gutter-x {
+  --g-gutter-x: 0;
+}
+
+.g-no-gutter, .g-no-gutter-y {
+  --g-gutter-y: 0;
 }
 
 .g-col {
@@ -201,3 +224,5 @@
 .g-col-pull-11 {
     margin-right: 91.66666667%;
 }
+
+
