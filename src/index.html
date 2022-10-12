@@ -42,6 +42,14 @@
         .info > p {
             font-family: 'Open Sans', sans-serif;
         }
+        
+        .info > table {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .table > th, td {
+            padding: 0 15px;
+        }
 
         .box{
             display: flex;
@@ -299,6 +307,48 @@
                 </div>
             </div>
         </section>
+        <!-- Responsive -->
+        <section class="info">
+            <h2>Responsive</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Screen Size</th>
+                    <th>Min Width</th>
+                    <th>Prefix</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Extra small</td>
+                    <td>576px</td>
+                    <td>.g-col-xs-</td>
+                  </tr>
+                  <tr>
+                    <td>Small</td>
+                    <td>768px</td>
+                    <td>.g-col-sm-</td>
+                  </tr>
+                  <tr>
+                    <td>Medium</td>
+                    <td>992px</td>
+                    <td>.g-col-md-</td>
+                  </tr>
+                  <tr>
+                    <td>Large</td>
+                    <td>1200px</td>
+                    <td>.g-col-lg-</td>
+                  </tr>
+                  <tr>
+                    <td>Extra large</td>
+                    <td>1400px</td>
+                    <td>.g-col-xl-</td>
+                  </tr>
+                </tbody>
+                </table>
+        </section>
+
     </div>
 </body>
 </html>
