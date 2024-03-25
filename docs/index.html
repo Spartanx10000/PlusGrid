@@ -8,7 +8,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="css/plusgrid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Spartanx10000/PlusGrid@main/dist/plusgrid.min.css">
 
     <style>
         body {
@@ -79,6 +79,7 @@
 </head>
 <body>
     <div class="g-container">
+        <!-- Header -->
         <section class="header">
             <span>PlusGrid</span>
             <p> A simple 12 columns grid layout based on flexbox. </p>
@@ -307,6 +308,28 @@
                 </div>
             </div>
         </section>
+        <!-- Center -->
+        <section class="info">
+            <h2>align-center</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="g-container" style="background-color: white;">
+                <div class="g-row align-center" style="height: 150px;">
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                </div>
+            </div>
+            <div class="g-container" style="background-color: white;">
+                <div class="g-row align-center" style="height: 150px;">
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                </div>
+            </div>
+            <div class="g-container" style="background-color: white;">
+                <div class="g-row align-center" style="height: 150px;">
+                    <div class="g-col-1"><div class="box">col-1</div></div>
+                    <div class="g-col-5"><div class="box">col-5</div></div>
+                </div>
+            </div>
+        </section>
         <!-- Responsive -->
         <section class="info">
             <h2>Responsive</h2>
@@ -348,7 +371,6 @@
                 </tbody>
                 </table>
         </section>
-
     </div>
 </body>
 </html>

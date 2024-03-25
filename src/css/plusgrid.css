@@ -65,6 +65,13 @@
     padding-left: calc(var(--g-gutter-x) * .50);
 }
 
+/* Center */
+.align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .g-no-gutter, .g-no-gutter-x {
   --g-gutter-x: 0;
 }
